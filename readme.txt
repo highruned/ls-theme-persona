@@ -43,7 +43,7 @@ Structure:
 
 Notes:
 
-This package also contains any PSDs used to create the layout, in the `design` folder.
+- This package also contains any PSDs used to create the layout, in the `design` folder.
 
 
 Support
