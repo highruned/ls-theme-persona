@@ -1,0 +1,50 @@
+/**
+ * RESET
+ **************************************************/
+  
+* { 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+  vertical-align: top;
+}
+
+fieldset,img {  
+  border:0;
+}
+
+address,caption,cite,code,dfn,th,var {
+  font-style:normal;
+  font-weight:normal;
+}
+
+ol,ul {
+  list-style:none;
+}
+
+caption,th {
+  text-align:left;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-size:100%;
+  font-weight:normal;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content:'';
+  content:none;
+}
+
+abbr,acronym {
+  border:0;
+}

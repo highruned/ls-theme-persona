@@ -11,6 +11,8 @@ $meta_keywords = ($meta_keywords = strlen(h($this->page->keywords))) > 0 ? $meta
     <meta name="description" content="<?= $meta_description ?>" />
     <meta name="keywords" content="<?= $meta_keywords ?>" />
     
+    <link rel="shortcut icon" href="<?= site_url('/') ?>favicon.ico" />
+    
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?= site_url($site_settings->blog->path) ?>feed/" />
     
     <!--[if lte IE 6]><script src="http://letskillie6.googlecode.com/svn/trunk/letskillie6.pack.js"></script><![endif]-->

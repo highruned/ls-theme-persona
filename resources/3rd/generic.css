@@ -1,0 +1,49 @@
+/**
+ * GENERIC HELPERS
+ **************************************************/
+    
+.clear_both {
+  clear: both;
+}
+
+.center {
+  text-align: center;
+}
+
+.auto_center {
+  float: none;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.text_left {
+  text-align: left;
+}
+
+.text_right {
+  text-align: right;
+}
+
+.p10 {
+  padding: 10px;
+}
+
+.hand,
+.hand:hover {
+  cursor: pointer;
+}
+
+hr {
+  border: 0 #ccc solid;
+  border-top-width: 1px;
+  clear: both;
+  height: 0;
+}

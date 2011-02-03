@@ -1,0 +1,129 @@
+/*
+ * Forms
+ */
+
+ul.form li
+{
+  clear: both;
+}
+
+ul.form li.left
+{
+  float: left;
+  width: 45%;
+}
+
+ul.form li.right
+{
+  width: 49%;
+  clear: right;
+  float: right;
+}
+
+ul.form label
+{
+  display: block;
+}
+
+ul.form li.form_header
+{
+  color: #333;
+  font-weight: bold;
+  margin-bottom:0.5em;
+  margin-top:1.5em;
+}
+
+ul.form span.comment
+{
+  display: block;
+  margin-top: 2px;
+  color: #666;
+  font-weight:normal;
+}
+
+ul.form .text input,
+ul.form .text textarea
+{
+  width: 100%;
+}
+
+ul.form input:focus,
+ul.form textarea:focus
+{
+  background-color: #ffffcc;
+}
+
+ul.form textarea
+{
+  line-height: 150%;
+}
+
+ul.form li.text div
+{
+  padding-right: 1.2em;
+}
+
+ul.form select
+{
+  width: 100%;
+}
+
+ul.form li
+{
+  margin-bottom: 5px;
+}
+
+ul.form li.checkbox div
+{
+  float: left;
+}
+
+ul.form li.checkbox input
+{
+  margin: 0;
+  padding: 0;
+}
+
+ul.form li.checkbox label
+{
+  color: #333;
+  margin-left: 20px;
+  font-weight: normal;
+}
+
+ul.form li.radio_horizontal label
+{
+  margin-bottom: 0.5em;
+}
+
+ul.form li.radio_horizontal div
+{
+  float: left;
+  margin-bottom: 0.5em;
+}
+
+ul.form li.radio_horizontal input
+{
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+ul.form li.radio_horizontal div span
+{
+  display: block;
+  margin-left: 20px;
+  margin-right: 1.5em;
+}
+
+ul.form li.radio_horizontal div label
+{
+  color: #333;
+  font-weight: normal;
+}
+
+ul.form li.radio_horizontal img
+{
+  display: block;
+  margin-bottom: 0.3em;
+}

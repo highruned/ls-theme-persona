@@ -1,0 +1,147 @@
+#loading {
+	display: none;
+	position: fixed;
+	opacity: 0.95;
+	text-align: center;
+	right: 0;
+	z-index: 9999;
+	color: #000;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background: #cfcfcf url(../images/window.png) repeat-x 0 0;
+	-webkit-box-shadow: 2px 2px 6px #333, inset 0px 0px 4px #fff;
+	-moz-box-shadow: 2px 2px 6px #333, inset 0px 0px 4px #fff;
+	box-shadow: 2px 2px 6px #333, inset 0px 0px 4px #fff;
+	font: 18px/26px 'Ubuntu', Georgia, sans-serif;
+}
+
+#loading.top {
+	top: 85px;
+}
+
+#loading span {
+	display: block;
+	padding: 2px 300px 2px 20px;
+}
+
+
+/* jScrollPane */
+
+.jspContainer
+{
+  overflow: hidden;
+  position: relative;
+}
+
+.jspPane
+{
+  position: absolute;
+}
+
+.jspVerticalBar
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 100%;
+}
+
+.jspHorizontalBar
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  background: red;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+  margin: 0;
+  padding: 0;
+}
+
+.jspCap
+{
+  display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+  float: left;
+}
+
+.jspTrack
+{
+  background: #E2E2E2;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+  position: relative;
+}
+
+.jspDrag
+{
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  background: #9F9F9F;
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+  float: left;
+  height: 100%;
+}
+
+.jspArrow
+{
+  background: #50506d;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+}
+
+.jspArrow.jspDisabled
+{
+  cursor: default;
+  background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+  height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+  width: 16px;
+  float: left;
+  height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+  outline: none;
+}
+
+.jspCorner
+{
+  background: #eeeef4;
+  float: left;
+  height: 100%;
+}
+
+* html .jspCorner /* Yuk! CSS Hack for IE6 3 pixel bug :( */
+{
+  margin: 0 -3px 0 0;
+}

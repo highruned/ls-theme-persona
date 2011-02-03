@@ -23,10 +23,9 @@ class Tweak_Module extends Core_ModuleBase {
       if($partial == 'ls_cms_page') {
         unset($_POST['cms_update_elements'][$element]);
         
-        $this->cms_update_element = $element;
+        if($element)
+        	$this->cms_update_element = $element;
       }
-      
-      return $info; // we're done here
     }
   
     return $info;
