@@ -1,5 +1,5 @@
 <div class="content-header">
-  <h1>Utility</h1>
+  <h1>Persona</h1>
   <h2>a LemonStand Theme</h2>
 </div>
 <div class="content-body-wrapper box-1">
