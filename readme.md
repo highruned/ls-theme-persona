@@ -36,12 +36,12 @@ Site settings can be accessed in the following way, for example: `$site_settings
 `$this->render_partial('site:settings')->company->title`
 
 
-Structure:
-- Dialog message box text is located in the `resources/js/main.js` file.
+Structure:  
+- Dialog message box text is located in the `resources/js/main.js` file.  
 
 
-Notes:
-- This package also contains any PSDs used to create the layout, in the `design` folder.
+Notes:  
+- This package also contains any PSDs used to create the layout, in the `design` folder.  
 
 
 Support

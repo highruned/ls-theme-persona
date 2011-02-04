@@ -15,7 +15,6 @@ $meta_keywords = ($meta_keywords = strlen(h($this->page->keywords))) > 0 ? $meta
     
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?= site_url($site_settings->blog->path) ?>feed/" />
     
-    <!--[if lte IE 6]><script src="http://letskillie6.googlecode.com/svn/trunk/letskillie6.pack.js"></script><![endif]-->
     <!--[if lt IE 8]><script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js"></script><![endif]--> 
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     
