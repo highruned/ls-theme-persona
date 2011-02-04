@@ -36,18 +36,16 @@ Site settings can be accessed in the following way, for example: `$site_settings
 `$this->render_partial('site:settings')->company->title`
 
 
-Structure:  
+Notes
+---------------------------------------------------------------------------------------------------  
+- Any PSDs used to create the layout, are in the `design` folder.  
 - Dialog message box text is located in the `resources/js/main.js` file.  
-
-
-Notes:  
-- This package also contains any PSDs used to create the layout, in the `design` folder.  
-
 
 Support
 ---------------------------------------------------------------------------------------------------
 
 Please visit the LemonStand forums (http://forum.lemonstandapp.com/) for community support.
+
 
 Bugs & Updates
 ---------------------------------------------------------------------------------------------------
