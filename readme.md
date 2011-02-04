@@ -18,7 +18,7 @@ theme, please follow these instructions.
 Please note the CMS templates (pages, partials, layouts) will be merged with any already existing 
 in your store. Alternatively, and for version control, the `templates` directory contains filesystem CMS templates.
 
-This package contains module dependencies, located in the `modules` directory. Please follow these instructions.
+This package contains module dependencies, located in the `modules` directory. Please follow these instructions.  
 1. In the `modules` directory, please select all folders, right click, and copy them.
 1. Go to the `modules` directory in your LemonStand installation, right click, and paste them.
 
