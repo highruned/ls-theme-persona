@@ -51,3 +51,7 @@ Support
 
 Please visit the LemonStand forums (http://forum.lemonstandapp.com/) for community support.
 
+Bugs & Updates
+---------------------------------------------------------------------------------------------------
+
+Please check the repository for updates: https://github.com/ericmuyser/ls-theme-persona
