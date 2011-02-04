@@ -1,6 +1,6 @@
 <div class="content-header">
-  <h1>Eric Muyser</h1>
-  <h2>Code is Poetry</h2>
+  <h1>Utility</h1>
+  <h2>a LemonStand Theme</h2>
 </div>
 <div class="content-body-wrapper box-1">
   <div class="content-body">

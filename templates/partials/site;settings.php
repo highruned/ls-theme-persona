@@ -7,26 +7,17 @@ if(!function_exists('site_settings')) {
       'charset' => 'utf-8',
       'company' => (object) array(
         'title' => Shop_CompanyInformation::get()->name,
-        'slogan' => 'Metacoder',
-        'sales_email' => 'eric.muyser@gmail.com',
-        'twitter_page' => 'http://twitter.com/ericmuyser',
-        'facebook_page' => 'http://www.facebook.com/ericmuyser'
-      ),
-      'customer' => (object) array(
-        'default_email' => 'email@yourdomain.com',
+        'slogan' => 'Slogan here',
+        'sales_email' => 'name@site.com',
+        'twitter_page' => 'http://twitter.com/',
+        'facebook_page' => 'http://www.facebook.com/'
       ),
       'meta' => (object) array(
-        'default_description' => "Code is Poetry",
-        'default_keywords' => "eric muyser, coder, programmer, programming, jquery, php, api, scripts, youtube, lemonstand, wordpress, themes, classes, open source",
-      ),
-      'category' => (object) array(
-        'products_per_page' => 15
-      ),
-      'search' => (object) array(
-        'products_per_page' => 6
+        'default_description' => "Meta description",
+        'default_keywords' => "Meta keywords",
       ),
       'blog' => (object) array(
-      'path' => '/blog/'
+        'path' => '/blog/'
       )
     );
   }

@@ -42,6 +42,6 @@ $meta_keywords = ($meta_keywords = strlen(h($this->page->keywords))) > 0 ? $meta
       '/resources/3rd/jquery.ls_alert.js',
       '/resources/js/menu.js',
       '/resources/js/main.js'
-)/*, array(), array('src_mode' => true, 'skip_cache' => true)*/) ?>
+    )) ?>
     
     <?= $this->render_head() ?>
