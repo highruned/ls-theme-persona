@@ -11,7 +11,7 @@
       ulPadding = 0,
       divHeight = div.height(),
       lastLi = ul.find('> li:last-child');
-      
+       
       div.scrollTop(0);
       
       div.mousemove(function(e) {
