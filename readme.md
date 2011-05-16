@@ -2,7 +2,7 @@ Instructions for LemonStand theme: "Persona"
 ===================================================================================================
 
 
-Installation:
+Installation
 ---------------------------------------------------------------------------------------------------
 
 This package contains a CMS export of the theme, with file name `cms.lca`. In order to import this 
@@ -23,7 +23,7 @@ This package contains module dependencies, located in the `modules` directory. P
 2. Go to the `modules` directory in your LemonStand installation, right click, and paste them.  
 
 
-Configuration:
+Configuration
 ---------------------------------------------------------------------------------------------------
 
 These instructions assume that you already have this theme imported into your LemonStand store.
@@ -33,7 +33,7 @@ title, social networking links, meta data, page paths (must match
 existing pages), and more.
 
 Site settings can be accessed in the following way, for example: `$site_settings->company->title` or 
-`$this->render_partial('site:settings')->company->title`
+`$this->render_partial('site:settings')->company->title`.
 
 
 Notes

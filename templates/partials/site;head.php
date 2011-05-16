@@ -11,10 +11,17 @@ $meta_keywords = ($meta_keywords = strlen(h($this->page->keywords))) > 0 ? $meta
     <meta name="description" content="<?= $meta_description ?>" />
     <meta name="keywords" content="<?= $meta_keywords ?>" />
     
-    <link rel="shortcut icon" href="<?= site_url('/') ?>favicon.ico" />
+    <script>
+      // send people with javascript to the Ajax navigation
+      if(window.location.pathname !== '/')
+        window.location = '/#' + window.location.pathname;
+    </script> 
+    
+    <link rel="shortcut icon" href="<?= site_url('/') ?>resources/favicon.ico" />
     
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?= site_url($site_settings->blog->path) ?>feed/" />
     
+    <!--[if lte IE 6]><script src="http://letskillie6.googlecode.com/svn/trunk/letskillie6.pack.js"></script><![endif]-->
     <!--[if lt IE 8]><script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js"></script><![endif]--> 
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     
@@ -33,6 +40,7 @@ $meta_keywords = ($meta_keywords = strlen(h($this->page->keywords))) > 0 ? $meta
       '/resources/3rd/jquery-ui-1.8.5.custom.min.js',
       'ls_core_jquery',
       '/resources/3rd/jquery.mousewheel.js',
+      '/resources/3rd/innershiv.js',
       '/resources/3rd/wheelintent.js',
       '/resources/3rd/jScrollPane.js',
       '/resources/3rd/jquery.address-1.3.min.js',
@@ -41,6 +49,6 @@ $meta_keywords = ($meta_keywords = strlen(h($this->page->keywords))) > 0 ? $meta
       '/resources/3rd/jquery.ls_alert.js',
       '/resources/js/menu.js',
       '/resources/js/main.js'
-    )) ?>
-    
+		)) ?>
+
     <?= $this->render_head() ?>

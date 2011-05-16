@@ -85,7 +85,7 @@ jQuery(document).ready(function($) {
         
       html += '<li><section id="' + id + '"></section></li>';
       
-      $(html).appendTo($('> ul', pane_target));
+      $(innerShiv(html)).appendTo($('> ul', pane_target));
       
       on_resize();
     }
@@ -99,7 +99,7 @@ jQuery(document).ready(function($) {
       
       section_target.addClass('active');
       
-      on_resize();
+      on_resize({reposition: false});
       
       var speed = site.slide_mode ? site.slide_speed : 0;
       
@@ -113,11 +113,11 @@ jQuery(document).ready(function($) {
       onAfterUpdate: function() {
         update_links();
         
-        document.title = $('.content-header h1', section_target).html() + ' - My Company';
+        document.title = $('.content-header h1', section_target).html() + ' - Eric Muyser';
         
         section_target.addClass('active');
         
-        on_resize();
+        on_resize({reposition: false});
         
         var speed = site.slide_mode ? site.slide_speed : 0;
         
@@ -127,7 +127,7 @@ jQuery(document).ready(function($) {
     
     context['update'][id] = 'ls_cms_page';
 
-    Phpr.sendRequest('/' + name, 'on_action', context);
+    Phpr.sendRequest('/' + name + '/', 'on_action', context);
   };
   
   $('#navigation-social').menu({
@@ -143,9 +143,13 @@ jQuery(document).ready(function($) {
     $(this).stop().animate({'background-color': '#262626'}, 500, function() {  });
   });
   
-  on_resize = function() {
+  on_resize = function(params) {
+    params = $.extend({
+      reposition: true
+    }, params);
+    
     $('section.active .content-body-wrapper', pane_target).css('height', function() {
-      return $(window).height() - $('section.active .content-header', pane_target).height() - 70 - 20 - 20 - 40; // 20 padding/margin
+      return $(window).height() - $('section.active .content-header', pane_target).height() - 70 - 20 - 20 - 40; // 20 padding/margin   
     });
     
     $('#navigation-social').css('height', function() {
@@ -168,25 +172,26 @@ jQuery(document).ready(function($) {
     
     if(!$('section.active .content-fade').length) // already init?
       $('section.active .content-body').prepend('<div class="content-fade top"></div>').append('<div class="content-fade bottom"></div>');
-  };
+    
+    if(params.reposition) {
+      var section_target = $('section.active', pane_target);
+      pane_target.scrollTo(section_target.parent());
+    }
+  }; 
 
   $(window).bind('resize', on_resize);
-  
-  
-  $(window).load(function() { 
-    $(window).trigger('resize'); 
-  });
   
   if(!site.ajax_mode)
     return;
   
   var initialize_ajax_mode = function() {
     update_links();
+    on_resize();
   
     $.address.internalChange(on_hash_change);
     $.address.externalChange(on_hash_change);
     
-    $(window).load(function() { 
+    $(window).load(function() {
       if(!last_hash_change)
         on_hash_change();
     });
