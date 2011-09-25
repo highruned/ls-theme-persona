@@ -21,7 +21,9 @@
 
 #loading span {
 	display: block;
-	padding: 2px 300px 2px 20px;
+	margin: 2px 2px 2px 10px;
+  padding: 0 300px 0 35px;
+	background: url(../images/loading-2.gif) no-repeat 0 0;
 }
 
 
