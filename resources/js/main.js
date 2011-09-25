@@ -15,8 +15,8 @@ jQuery.fn.extend({
 });
 
 var random = 0;
-jQuery.extend(jQuery.expr[':'],
-{
+
+jQuery.extend(jQuery.expr[':'], {
   random: function(a, i, m, r) {
     if (i == 0) {
         random = Math.floor(Math.random() * r.length);
@@ -33,24 +33,12 @@ jQuery(document).ready(function($) {
     $('a').each(function() {
       var self = $(this);
       
-      if(self.attr('rel')) // we've already updated this link
-        return;
-      
       var uri = self.attr('href');
       
       if(!uri) // this link doesn't have a URI?!
         return;
       
-      /*if(uri === location 
-      || (uri + '/') === location 
-      || uri === (location + '/')
-      || location.search(uri) !== -1
-      || (uri.substr(0, 4) !== 'http'
-        && uri.substr(0, 1) !== '#'
-        && uri.substr(0, 9) !== 'javascript')
-      )*/
       if(uri.substr(0, 1) === '/') {
-        self.attr('rel', 'address:' + uri);
         self.attr('href', '#' + uri);
       }
     });
@@ -127,7 +115,7 @@ jQuery(document).ready(function($) {
     
     context['update'][id] = 'ls_cms_page';
 
-    Phpr.sendRequest('/' + name + '/', 'on_action', context);
+    LS.sendRequest('/' + name + '/', 'on_action', context);
   };
   
   $('#navigation-social').menu({
@@ -175,6 +163,7 @@ jQuery(document).ready(function($) {
     
     if(params.reposition) {
       var section_target = $('section.active', pane_target);
+      
       pane_target.scrollTo(section_target.parent());
     }
   }; 
