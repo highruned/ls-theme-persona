@@ -95,7 +95,7 @@ jQuery(document).ready(function($) {
     var section_target = pane_target.find('#' + id);
     
     if(section_target.html()) { // section is already good to go
-      document.title = $('.content-header h1', section_target).html() + ' - Eric Muyser';
+      document.title = $('.content-header h1', section_target).html() + ' - My Company';
       
       section_target.addClass('active');
       
@@ -113,7 +113,7 @@ jQuery(document).ready(function($) {
       onAfterUpdate: function() {
         update_links();
         
-        document.title = $('.content-header h1', section_target).html() + ' - Eric Muyser';
+        document.title = $('.content-header h1', section_target).html() + ' - My Company';
         
         section_target.addClass('active');
         
