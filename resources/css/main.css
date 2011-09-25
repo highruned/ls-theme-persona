@@ -260,7 +260,7 @@ ul.style-2 {
     width: 20px;
     height: 20px;
     margin: 0 18px 5px;
-    background: url(http://eric.muyser.com/theme/resources/images/social-overlay.png) no-repeat 0 0;
+    background: url(/resources/images/social-overlay.png) no-repeat 0 0;
     border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -289,7 +289,7 @@ ul.style-2 {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  background: #cfcfcf url(http://eric.muyser.com/theme/resources/images/window.png) repeat-x 0 0;
+  background: #cfcfcf url(/resources/images/window.png) repeat-x 0 0;
   -webkit-box-shadow: #333 1px 1px 6px, white 0px 0px 4px inset;
   -moz-box-shadow: 0 0 5px #333, inset 0px 0px 4px #fff;
   box-shadow: 0 0 5px #333, inset 0px 0px 4px #fff;
@@ -320,7 +320,7 @@ html > body {
 
 body {
   font: 13px Georgia, Arial, sans-serif;
-  background: #fff url(http://eric.muyser.com/theme/resources/images/body.jpg) repeat 0 0;
+  background: #fff url(/resources/images/body.jpg) repeat 0 0;
   color: #333;
   overflow: hidden;
 }
@@ -469,7 +469,7 @@ a.more:hover,
 /* hover */
 
 #content {
-    background: transparent url(http://eric.muyser.com/theme/resources/images/highlight.png) no-repeat 50% 0;
+    background: transparent url(/resources/images/highlight.png) no-repeat 50% 0;
 }
 
   #content a {
@@ -555,12 +555,12 @@ label {
 
 .content-fade.top {
   top: 40px;
-  background: url(http://eric.muyser.com/theme/resources/images/content-fade-top.png) repeat-x 0 0;
+  background: url(/resources/images/content-fade-top.png) repeat-x 0 0;
 }
 
 .content-fade.bottom {
   bottom: 20px;
-  background: url(http://eric.muyser.com/theme/resources/images/content-fade-bottom.png) repeat-x 0 0;
+  background: url(/resources/images/content-fade-bottom.png) repeat-x 0 0;
 }
 
 img.left {
