@@ -2,7 +2,7 @@
 Provides assistance developing themes for your store.
 
 ## Installation
-1. Download [Tweak](https://github.com/limewheel/ls-module-tweak/zipball/master)
+1. Download [Tweak](https://github.com/limewheel/ls-module-tweak/zipball/master).
 1. Create a folder named `tweak` in the `modules` directory.
 1. Extract all files into the `modules/tweak` directory (`modules/tweak/readme.md` should exist).
 1. Customize your `site:settings` partial in the CMS, as described in the `Usage` section.
@@ -11,7 +11,7 @@ Provides assistance developing themes for your store.
 ## Links
 
 * [Marketplace](https://lemonstandapp.com/marketplace/module/tweak/)
-* [Discussion](http://forum.lemonstandapp.com/topic/2199-module-tweak/)
+* [Discussion](http://forum.lemonstandapp.com/topic/2634-module-tweak/)
 * [Source](https://github.com/limewheel/ls-module-tweak)
 
 ## Usage

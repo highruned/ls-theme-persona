@@ -2,13 +2,16 @@
 
 	class Tweak_Module extends Core_ModuleBase {
 		private $cms_update_element;
+		private $is_rendering_started;
 		
 		protected function get_info() {
 			$info = new Core_ModuleInfo(
 				"Tweak",
 				"Provides assistance developing themes for your store.",
-				"Limewheel Creative, Inc."
+				"Limewheel Creative Inc."
 			);
+			
+			$this->is_rendering_started = false;
 			
 			$helper = new Tweak_Helper();
 
@@ -36,6 +39,11 @@
 		}
 		
 		public function before_page_display() {
+			if($this->is_rendering_started) // have we started rendering? avoid looping
+				return;
+			
+			$this->is_rendering_started = true; // we've started rendering
+		
 			// we want $site_settings for non-ajax
 			$controller = Cms_Controller::get_instance();
 			$controller->data['site_settings'] = $controller->render_partial('site:settings');
@@ -50,15 +58,20 @@
 		public function after_handle_ajax() {
 			if(!$this->cms_update_element)
 				return;
+				
+			if($this->is_rendering_started) // have we started rendering? avoid looping
+				return;
+			
+			$this->is_rendering_started = true; // we've started rendering
 			
 			$controller = Cms_Controller::get_instance();
-			$controller->action();
 			
 			$params = array(); // does nothing
 			$page = Cms_Page::findByUrl(Phpr::$request->getCurrentUri(), $params);
 			
 			ob_start();
-			$controller->open($page, $params);
+			$params = array(); // does nothing
+			$controller->open($controller->page, $params);
 			ob_end_clean();
 		
 			echo ">>" . $this->cms_update_element . "<<";
