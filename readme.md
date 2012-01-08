@@ -9,10 +9,10 @@ This package contains a CMS export of the theme, with file name `cms.lca`. In or
 theme, please follow these instructions.  
 1. Log in to your LemonStand store.  
 2. Select the `CMS` section from the menu.  
-3. Select `Export or Import` from the sub-menu.  
-4. Choose `Import pages, partials and templates`.  
-5. Click `Choose file`, locate and select `cms.lca` from your harddrive, and then choose `Import`.  
-6. Allow LemonStand to upload and import the CMS templates.  
+3. Select `Themes` from the sub-menu. If you do not see `Themes`, please make sure your installation is up-to-date.  
+4. Choose `Import theme`.  
+5. Click `Choose file`, locate and select `persona.lca` from your harddrive, and then choose `Import`.  
+6. Allow LemonStand to upload and import the CMS theme.  
 7. Follow the configuration instructions below.  
 
 Please note the CMS templates (pages, partials, layouts) will be merged with any already existing 
@@ -39,7 +39,7 @@ Site settings can be accessed in the following way, for example: `$site_settings
 Notes
 ---------------------------------------------------------------------------------------------------  
 - Any PSDs used to create the layout, are in the `design` folder.  
-- Dialog message box text is located in the `resources/js/main.js` file.  
+- Dialog message box text is located in the `themes/persona/resources/js/main.js` file.  
 
 Support
 ---------------------------------------------------------------------------------------------------

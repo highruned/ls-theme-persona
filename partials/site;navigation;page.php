@@ -17,4 +17,4 @@
       'anchor_attributes' => array()
     ));
   ?>
-</ul><a class="left" href="<?= $site_settings->company->twitter_page ?>"><img src="<?= root_url('/') ?>resources/images/icon-tw.png" alt="Go to Twitter" /></a>
+</ul><a class="left" href="<?= $site_settings->company->twitter_page ?>"><img src="<?= theme_resource_url('images/icon-tw.png') ?>" alt="Go to Twitter" /></a>

@@ -26,29 +26,29 @@ $meta_keywords = ($meta_keywords = strlen(h($this->page->keywords))) > 0 ? $meta
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     
     <?= $this->css_combine(array(
-      '/resources/vendor/reset.css',
-      '/resources/vendor/typographic.css',
-      '/resources/vendor/generic.css',
-      '/resources/vendor/form.css',
+      '@vendor/reset.css',
+      '@vendor/typographic.css',
+      '@vendor/generic.css',
+      '@vendor/form.css',
       'http://fonts.googleapis.com/css?family=Ubuntu',
-      '/resources/css/plugins.css',
-      '/resources/css/main.css'
+      '@css/plugins.css',
+      '@css/main.css'
     )) ?>
     
     <?= $this->js_combine(array(
       'jquery', 
-      '/resources/vendor/jquery-ui-1.8.5.custom.min.js',
+      '@vendor/jquery-ui-1.8.5.custom.min.js',
       'ls_core_jquery',
-      '/resources/vendor/jquery.mousewheel.js',
-      '/resources/vendor/innershiv.js',
-      '/resources/vendor/wheelintent.js',
-      '/resources/vendor/jScrollPane.js',
-      '/resources/vendor/jquery.address-1.4.js',
-      '/resources/vendor/jquery.scrollTo-1.4.2-min.js',
-      '/resources/vendor/jquery.bar.js',
-      '/resources/vendor/jquery.ls_alert.js',
-      '/resources/js/menu.js',
-      '/resources/js/main.js'
+      '@vendor/jquery.mousewheel.js',
+      '@vendor/innershiv.js',
+      '@vendor/wheelintent.js',
+      '@vendor/jScrollPane.js',
+      '@vendor/jquery.address-1.4.js',
+      '@vendor/jquery.scrollTo-1.4.2-min.js',
+      '@vendor/jquery.bar.js',
+      '@vendor/jquery.ls_alert.js',
+      '@js/menu.js',
+      '@js/main.js'
 		)) ?>
 
     <?= $this->render_head() ?>
